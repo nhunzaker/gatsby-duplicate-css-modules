@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "dependencies": {
+    "gatsby": "^1.8.12",
+    "gatsby-link": "^1.6.8",
+    "gatsby-plugin-react-helmet": "^1.0.3"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "static": "gatsby serve",
+    "format": "prettier --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "yarn build && surge --project public --domain gatsby-duplicate-css-modules.surge.sh"
+  },
+  "devDependencies": {
+    "prettier": "^1.5.2"
+  }
+}
